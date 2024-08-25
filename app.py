@@ -40,18 +40,18 @@ elif page == "Academic Qualifications":
     
     st.subheader("Institute of Business Administration, Karachi")
     st.write("""
-    - **BS Computer Science (2020 - 2024)**
+    **BS Computer Science (2020 - 2024)**
     - CGPA: 3.56 (Honorable Mention in The Dean’s List)
     - Papers: [Link](https://iba.academia.edu/HashirMuzaffar)
     """)
-    
-    st.subheader("ARMY PUBLIC SCHOOL, BAHAWALPUR")
+    school="Army Public School, Bahawalpur"
+    st.subheader(s)
     st.write("""
-    - **A LEVELS (2017 - 2019)**
+    **A LEVELS (2017 - 2019)**
     - Subjects: Computer Science, Physics, Chemistry, Mathematics
     - Grades: 1A*, 3As
     
-    - **O LEVELS (2014 - 2017)**
+    **O LEVELS (2014 - 2017)**
     - Subjects: Computer Science, Physics, Chemistry, Mathematics, English
     - Grades: 3A*s, 1A, 1B
     """)
