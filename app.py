@@ -14,14 +14,13 @@ page = st.sidebar.radio("Go to", ["Home", "Projects", "Experience", "Contact"])
 
 # Home Page
 if page == "Home":
-    st.title("Hello, I'm Hashir!")
-    st.subheader("Junior AI Engineer | AI Enthusiast | Teacher")
-    
     # Layout: Two Columns
     col1, col2 = st.columns([2, 1])  # Create two columns with relative width
 
     # Left Column - Text
     with col1:
+        st.title("Hello, I'm Hashir!")
+        st.subheader("Junior AI Engineer | AI Enthusiast | Teacher")
         st.write("""
         I am a passionate AI Engineer currently working at Kalorist, where I am developing KalCoach, a personalized fitness AI assistant.
         My journey in AI has led me through various projects involving GPT-4, LangChain, and generative AI models, helping solve real-world problems.
@@ -31,7 +30,7 @@ if page == "Home":
     # Right Column - Image (Round)
     with col2:
         img = Image.open("hashir.jpg")  # Replace with your profile picture
-        st.image(img, caption="Hashir's Profile Picture", use_column_width=True, output_format="PNG")
+        st.image(img, use_column_width=True, output_format="PNG")
 
 
 
