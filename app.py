@@ -9,6 +9,12 @@ st.set_page_config(
     layout="wide",  # You can also use "centered" layout
 )
 
+
+
+# Sidebar Navigation
+st.sidebar.title("Navigation")
+page = st.sidebar.radio("Go to", ["Home", "Projects", "Experience", "Contact"])
+
 # Custom CSS for round image on the right
 st.markdown(
     """
@@ -23,10 +29,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-# Sidebar Navigation
-st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["Home", "Projects", "Experience", "Contact"])
 
 # Home Page
 if page == "Home":
