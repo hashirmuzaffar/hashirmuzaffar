@@ -9,6 +9,21 @@ st.set_page_config(
     layout="wide",  # You can also use "centered" layout
 )
 
+# Custom CSS for round image on the right
+st.markdown(
+    """
+    <style>
+    .round-img-right {
+        float: right;
+        border-radius: 50%;
+        width: 250px;
+        margin-left: 20px;  /* Adds spacing between the text and the image */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Sidebar Navigation
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Home", "Projects", "Experience", "Contact"])
@@ -19,8 +34,10 @@ if page == "Home":
     st.subheader("Junior AI Engineer | AI Enthusiast | Teacher")
     
     # Display Image
+        # Display Round Image on the Right Side
     img = Image.open("hashir.jpg")  # Replace with your own profile picture
-    st.image(img, width=250)
+    st.markdown(f'<img src="profile_pic.jpg" class="round-img-right">', unsafe_allow_html=True)
+    
     
     st.write("""
     I am a passionate AI Engineer currently working at Kalorist, where I am developing KalCoach, a personalized fitness AI assistant. My journey in AI has led me through various projects involving GPT-4, LangChain, and generative AI models, helping solve real-world problems. I also love teaching and aim to inspire students to explore the world of STEM.
