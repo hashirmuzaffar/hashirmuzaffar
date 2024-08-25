@@ -45,7 +45,7 @@ elif page == "Academic Qualifications":
     - Papers: [Link](https://iba.academia.edu/HashirMuzaffar)
     """)
     school="Army Public School, Bahawalpur"
-    st.subheader(s)
+    st.subheader(school)
     st.write("""
     **A LEVELS (2017 - 2019)**
     - Subjects: Computer Science, Physics, Chemistry, Mathematics
