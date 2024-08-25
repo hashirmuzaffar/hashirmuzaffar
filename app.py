@@ -3,6 +3,12 @@
 import streamlit as st
 from PIL import Image
 
+st.set_page_config(
+    page_title="Hashir's Portfolio",
+    page_icon="icon.png",  # Replace with the path to your favicon (e.g., 'favicon.ico')
+    layout="wide",  # You can also use "centered" layout
+)
+
 # Sidebar Navigation
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Home", "Projects", "Experience", "Contact"])
