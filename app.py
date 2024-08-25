@@ -38,7 +38,7 @@ if page == "Home":
     st.image(img, width=250, caption="Hashir's Profile Picture", use_column_width=False)
     
     # Add the class for round image
-    st.markdown('<img src="profile_pic.jpg" class="round-img">', unsafe_allow_html=True)
+    st.markdown('<img src="hashir.jpg" class="round-img">', unsafe_allow_html=True)
 
     st.write("""
     I am a passionate AI Engineer currently working at Kalorist, where I am developing KalCoach, a personalized fitness AI assistant. My journey in AI has led me through various projects involving GPT-4, LangChain, and generative AI models, helping solve real-world problems. I also love teaching and aim to inspire students to explore the world of STEM.
