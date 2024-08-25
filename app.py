@@ -34,7 +34,7 @@ if page == "Home":
     st.subheader("Junior AI Engineer | AI Enthusiast | Teacher")
     
     # Display Round Image
-    img = Image.open("profile_pic.jpg")  # Replace with your own profile picture
+    img = Image.open("hashir.jpg")  # Replace with your own profile picture
     st.image(img, width=250, caption="Hashir's Profile Picture", use_column_width=False)
     
     # Add the class for round image
