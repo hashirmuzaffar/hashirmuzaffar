@@ -30,7 +30,7 @@ if page == "Home":
 
     # Right Column - Image (Round)
     with col2:
-        img = Image.open("profile_pic.jpg")  # Replace with your profile picture
+        img = Image.open("hashir.jpg")  # Replace with your profile picture
         st.image(img, caption="Hashir's Profile Picture", use_column_width=True, output_format="PNG")
 
 
