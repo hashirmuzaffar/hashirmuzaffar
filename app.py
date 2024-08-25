@@ -3,7 +3,7 @@ from PIL import Image
 
 # Set custom page title and favicon
 st.set_page_config(
-    page_title="Hashir's life",
+    page_title="Hashir's Life",
     page_icon="icon.png",
     layout="wide",
 )
@@ -30,8 +30,6 @@ if page == "Home":
     with col2:
         img = Image.open("hashir.jpg")  # Replace with your profile picture
         st.image(img, use_column_width=True, output_format="PNG")
-
-
 
 # Projects Page
 elif page == "Projects":
@@ -84,7 +82,6 @@ elif page == "Contact":
     st.write("Feel free to reach out to me through the following platforms:")
     
     st.markdown("""
-    - **Email:** hashir@example.com
     - **LinkedIn:** [Hashir Muzaffar](https://www.linkedin.com/in/hashir-muzaffar)
     - **GitHub:** [hashirmuzaffar](https://github.com/hashirmuzaffar)
     """)
@@ -98,8 +95,15 @@ elif page == "Contact":
         submit_button = st.form_submit_button("Send")
         
         if submit_button:
+            # Function to send email would go here
             st.success("Message sent!")
 
 # Footer
 st.sidebar.write("---")
 st.sidebar.write("Developed by Hashir | © 2024")
+st.sidebar.write("Connect with me on:")
+st.sidebar.markdown("""
+- **[LinkedIn](https://www.linkedin.com/in/hashir-muzaffar)**
+- **[GitHub](https://github.com/hashirmuzaffar)**
+""")
+
