@@ -1,7 +1,7 @@
 # Hashir Muzaffar
 
 ML systems engineer in New York. I build speech and language systems that run in
-production — and study where they quietly go wrong.
+production, and study where they quietly go wrong.
 
 MS Computer Engineering (ML Systems) at NYU Tandon. Co-founder and lead ML
 engineer at Zotivo AI, where I work on production voice AI.
